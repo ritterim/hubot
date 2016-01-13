@@ -1,0 +1,11 @@
+[
+  "hubot-azure-scripts/brain/storage-blob-brain",
+  "hubot-diagnostics",
+  "hubot-help",
+  "hubot-google-images",
+  "hubot-google-translate",
+  "hubot-pugme",
+  "hubot-maps",
+  "hubot-rules",
+  "hubot-shipit"
+]

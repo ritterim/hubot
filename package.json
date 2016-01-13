@@ -1,0 +1,17 @@
+{
+  "name": "rimbot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Ritter Insurance Marketing",
+  "description": "",
+  "dependencies": {
+    "hubot-azure-scripts": "^0.1.7",
+    "hubot-slack": "^3.4.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "bash ./bin/hubot"
+  }
+}
