@@ -1,4 +1,5 @@
 [
+  "hubot-azure-notifier/azure-notifier",
   "hubot-azure-scripts/brain/storage-blob-brain",
   "hubot-diagnostics",
   "hubot-help",
