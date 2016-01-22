@@ -15,7 +15,7 @@
     "typescript": "^1.7.5"
   },
   "engines": {
-    "node": "0.12.x",
+    "node": "4.2.x",
     "npm": ">= 1.4.4"
   },
   "scripts": {
