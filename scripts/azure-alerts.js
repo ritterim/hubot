@@ -46,7 +46,7 @@ module.exports = (robot) => {
 
             let message = `Microsoft Azure ${ctx.name} alert ${req.body.status} for ${ctx.resourceName} under ${ctx.subscriptionId} in ${ctx.resourceRegion}! ${metricText}View on Azure portal: ${ctx.portalLink}`;
 
-            robot.send(req.params.room, message);
+            robot.send({ room: req.params.room }, message);
 
             res.send('ok');
         }
