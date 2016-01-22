@@ -7,6 +7,5 @@
   "hubot-google-translate",
   "hubot-maps",
   "hubot-rules",
-  "hubot-shipit",
-  "hubot-github-webhook-listener"
+  "hubot-shipit"
 ]
