@@ -41,10 +41,10 @@ module.exports = (robot) => {
             // only apply to metric alerts.
             var cond = ctx.condition;
             var metricText = cond.metricName
-              ? `${cond.timeAggregation} ${cond.metricName} ${cond.metricUnit} of ${cond.metricValue} is ${cond.operator} threshold of ${cond.threshold}. `
+              ? `(${cond.metricName} ${cond.metricUnit} of ${Math.round(cond.metricValue * 100) / 100} is ${cond.operator} threshold of ${cond.threshold}) `
               : null;
 
-            let message = `Microsoft Azure ${ctx.name} alert ${req.body.status} for ${ctx.resourceName} under ${ctx.subscriptionId} in ${ctx.resourceRegion}! ${metricText}View on Azure portal: ${ctx.portalLink}`;
+            let message = `Microsoft Azure alert: '${ctx.name}' ${req.body.status} for ${ctx.resourceName} in ${ctx.resourceRegion}! ${metricText}${ctx.portalLink}`;
 
             robot.send({ room: req.params.room }, message);
 
