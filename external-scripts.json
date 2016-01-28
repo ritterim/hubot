@@ -4,6 +4,7 @@
   "hubot-azure-scripts/brain/storage-blob-brain",
   "hubot-diagnostics",
   "hubot-help",
+  "hubot-github-issue-label-notifier",
   "hubot-google-images",
   "hubot-google-translate",
   "hubot-maps",
